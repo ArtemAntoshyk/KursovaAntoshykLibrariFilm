@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaantoshyklibrarifilm.ControlerAllFIlm">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="942.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="200.0">
+               <image>
+                  <Image url="@imageRes/Logo.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="64.0" prefWidth="149.0" />
+            <Pane prefHeight="64.0" prefWidth="64.0" styleClass="button" stylesheets="@../../../ButtonStyle.css">
+               <children>
+                  <ImageView fx:id="actors" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#actorsInfoPage" styleClass="button">
+                     <image>
+                        <Image url="@imageRes/actors.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="64.0" prefWidth="64.0" styleClass="button" stylesheets="@../../../ButtonStyle.css">
+               <children>
+                  <ImageView fx:id="newFilm" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#newfilmInfoPage">
+                     <image>
+                        <Image url="@imageRes/newFilm.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="63.0" prefWidth="63.0" styleClass="button" stylesheets="@../../../ButtonStyle.css">
+               <children>
+                  <ImageView fx:id="producer" fitHeight="64.0" fitWidth="64.0" layoutY="-1.0" onMouseClicked="#producerInfoPage">
+                     <image>
+                        <Image url="@imageRes/producer.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="62.0" prefWidth="164.0" />
+            <TextField fx:id="year" prefHeight="26.0" prefWidth="150.0" style="-fx-border-radius: 1; -fx-background-radius: 0;" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #004AAD; -fx-background-radius: 1;" text="Remove" textFill="WHITE" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="filmGrid">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

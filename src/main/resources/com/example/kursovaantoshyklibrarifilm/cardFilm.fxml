@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="368.0" spacing="15.0" style="-fx-background-color: #004AAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaantoshyklibrarifilm.FirstWindowController">
+   <children>
+      <Label fx:id="name" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="year" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="country" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="film_maker" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="actors" text="Label" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Consolas" size="19.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="20.0" top="10.0" />
+   </padding>
+</VBox>
